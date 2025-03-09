@@ -1,0 +1,41 @@
+{
+  "name": "NADEEN-MD",
+  "description": "Javascript WhatsApp bot made by NADEEN POORNA",
+  "logo": "https://files.catbox.moe/2nmi9q.png",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "AUTO_VOICE": {
+      "description": "Auto voice off or on.",
+      "required": true
+    },
+
+     "AUTO_READ_STATUS": {
+      "description": "Put your auto status view.",
+      "required": true
+    },
+
+    "MODE": {
+      "description": "Put your bpt work type.",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Put your alive msg here.",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
